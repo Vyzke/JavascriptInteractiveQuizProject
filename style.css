@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(to right, #c0392b, #2980b9);
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#startScreen {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #2c2c44;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 2px #000000;
+}
+
+#nameInput {
+  width: 250px;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #555577;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #555577;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #777799;
+}
+
+#message {
+  min-height: 20px;
+  color: #ff7675;
+}
+
+#nameList {
+  padding: 0;
+  list-style-type: none;
+}
+
+#nameList li {
+  margin: 5px 0;
+  padding: 6px;
+  background-color: #3d3d5c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#nameList li:hover {
+  background-color: #8e3b3b;
+  text-decoration: line-through;
+}
+
+.hint {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+#startButton {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #c0392b, #2980b9);
+}
+
+.team {
+  width: 45%;
+  min-height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px 2px #000000;
+}
+
+#redTeam {
+  float: left;
+  background-color: #c0392b;
+}
+
+#blueTeam {
+  float: right;
+  background-color: #2980b9;
+}
+
+.team ul {
+  padding: 0;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.team li {
+  margin: 8px 0;
+}
+
+#countdown {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#goScreen {
+  padding-top: 120px;
+  text-align: center;
+}
+
+#goScreen h2 {
+  margin: 0;
+  font-size: 96px;
+}
+
+#questionScreen {
+  text-align: center;
+}
+
+#questionNumber {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+#endScreen {
+  padding-top: 120px;
+  text-align: center;
+}
+
+#endScreen h2 {
+  font-size: 64px;
+}
+
+#questionText {
+  margin: 0 0 20px 0;
+  padding: 20px;
+  font-size: 26px;
+  color: #222222;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#answers {
+  overflow: hidden;
+}
+
+.answer {
+  float: left;
+  width: 49%;
+  height: 130px;
+  margin: 0.5%;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.answer.red {
+  background-color: #e21b3c;
+}
+
+.answer.blue {
+  background-color: #1368ce;
+}
+
+.answer.yellow {
+  background-color: #d89e00;
+}
+
+.answer.green {
+  background-color: #26890c;
+}
+
+.answer:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#questionMessage {
+  min-height: 24px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff7675;
+}
+
+#timerTrack {
+  height: 30px;
+  background-color: #3d3d5c;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#timerBar {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 15px;
+  line-height: 30px;
+  text-align: right;
+  font-weight: bold;
+  background-color: #8e44ad;
+  border-radius: 15px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Legends Trivia</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Coding Legends Trivia</h1>
+  </header>
+
+  <main>
+    <section id="startScreen">
+      <h2>Enter your name!</h2>
+      <form id="nameForm">
+        <input type="text" id="nameInput" placeholder="Type a name and press Enter" maxlength="20">
+        <button type="submit">Add</button>
+      </form>
+      <p id="message"></p>
+
+      <h3>Players (<span id="playerCount">0</span>)</h3>
+      <ul id="nameList"></ul>
+      <p class="hint">Click a name to remove it.</p>
+
+      <button type="button" id="startButton">Start</button>
+    </section>
+
+    <section id="teamScreen" class="hidden">
+      <p id="countdown"></p>
+      <div class="team" id="redTeam">
+        <h2>Team Red</h2>
+        <ul id="redList"></ul>
+      </div>
+      <div class="team" id="blueTeam">
+        <h2>Team Blue</h2>
+        <ul id="blueList"></ul>
+      </div>
+    </section>
+
+    <section id="goScreen" class="hidden">
+      <h2>START!</h2>
+    </section>
+
+    <section id="questionScreen" class="hidden">
+      <p id="questionNumber"></p>
+      <h2 id="questionText"></h2>
+      <div id="answers"></div>
+      <p id="questionMessage"></p>
+      <div id="timerTrack">
+        <div id="timerBar"><span id="timerNumber"></span></div>
+      </div>
+    </section>
+
+    <section id="endScreen" class="hidden">
+      <h2>Quiz over!</h2>
+    </section>
+  </main>
+</body>
+</html>
